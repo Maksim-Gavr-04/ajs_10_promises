@@ -1,14 +1,13 @@
 import { GameSavingLoader } from './GameSavingLoader';
 
+// TODO: write code here
 GameSavingLoader.load()
   .then(saving => {
     // saving объект класса GameSaving
     console.log(saving);
   }, error => {
     // ...
-    console.error(error);
+    console.log(`Ошибка: ${error}`);
   });
-
-// TODO: write code here
 
 console.log('app worked!');

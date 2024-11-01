@@ -5,9 +5,9 @@ export class GameSavingLoader {
   static load() {
     return read()
       .then(response => json(response))
-      .then(response => {
+      .then(data => {
         return new Promise(resolve =>
-          resolve(JSON.parse(response))
+          resolve(JSON.parse(data))
         );
       });
   }
